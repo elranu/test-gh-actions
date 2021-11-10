@@ -1,7 +1,7 @@
 export class DoStuff {
 
     public doStuff(){
-        let a = 1;
+        const a = "!!!!";
         return "Hello World" + a;
     }
 }
