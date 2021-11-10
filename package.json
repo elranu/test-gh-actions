@@ -1,0 +1,39 @@
+{
+  "name": "@elranu/test-gh-actions",
+  "version": "1.0.0",
+  "description": "Typescript seed",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "ts-node src/start.ts"
+  },
+  "prepublish": "tsc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elranu/test-gh-actions.git"
+  },
+  "keywords": [
+    "typescript",
+    "seed",
+    "github",
+    "actions"
+  ],
+  "author": "Mariano Vicario",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elranu/test-gh-actions/issues"
+  },
+  "homepage": "https://github.com/elranu/test-gh-actions#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/parser": "^5.3.1",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}

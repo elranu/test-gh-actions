@@ -1,0 +1,24 @@
+name: "NPM Publish Action"
+
+on: 
+  release:
+    types: [published]
+
+jobs:
+  release:
+    name: 'Publish npm'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'checkout'
+        uses: actions/checkout@v2.1.1
+      - name: 'node setup'
+        uses: actions/setup-node@v1.4.2
+        with:
+          node-version: 14
+          registry: https://npm.pkg.github.com
+          scope: '@elranu'
+      - run: npm install
+      - run: npm run build
+      - run: npm publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
