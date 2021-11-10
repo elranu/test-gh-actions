@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'checkout'
-        uses: actions/checkout@v2.1.1
+        uses: actions/checkout@v2.4.0
       - name: 'node setup'
-        uses: actions/setup-node@v1.4.2
+        uses: actions/setup-node@v2.4.1
         with:
           node-version: 14
           registry-url: https://npm.pkg.github.com
